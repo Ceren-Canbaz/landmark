@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0683A22CB6679600C706EC /*  ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0683A12CB6679600C706EC /*  ModelData.swift */; };
 		1D4ED5BD2CAAD7B300D62FB2 /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4ED5BC2CAAD7B300D62FB2 /* LandmarksApp.swift */; };
 		1D4ED5BF2CAAD7B300D62FB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4ED5BE2CAAD7B300D62FB2 /* ContentView.swift */; };
 		1D4ED5C12CAAD7B400D62FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4ED5C02CAAD7B400D62FB2 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D0683A12CB6679600C706EC /*  ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ModelData.swift"; sourceTree = "<group>"; };
 		1D4ED5B92CAAD7B300D62FB2 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4ED5BC2CAAD7B300D62FB2 /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		1D4ED5BE2CAAD7B300D62FB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				1D4ED5C22CAAD7B400D62FB2 /* Preview Content */,
 				1D4ED5D22CAADCCA00D62FB2 /* MapView.swift */,
 				1D4ED5D82CAAE83C00D62FB2 /* Landmark.swift */,
+				1D0683A12CB6679600C706EC /*  ModelData.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				1D4ED5D32CAADCCA00D62FB2 /* MapView.swift in Sources */,
 				1D4ED5BD2CAAD7B300D62FB2 /* LandmarksApp.swift in Sources */,
 				1D4ED5D12CAADB4400D62FB2 /* CircleImage.swift in Sources */,
+				1D0683A22CB6679600C706EC /*  ModelData.swift in Sources */,
 				1D4ED5D92CAAE83C00D62FB2 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
