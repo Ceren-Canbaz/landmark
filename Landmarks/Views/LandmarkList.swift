@@ -24,7 +24,7 @@ struct LandmarkList: View {
                     }
                 }
                 
-            }
+            }.animation(.default, value: filteredLandmarks)
             .navigationTitle("Landmarks")
         }
         
