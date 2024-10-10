@@ -30,7 +30,7 @@ struct LandmarkList: View {
         
         detail: {
             Text("select a landmark")
-        }
+            }
         }
     
 }
