@@ -1,19 +1,12 @@
-//
-//  ContentView.swift
-//  Landmarks
-//
-//  Created by Ceren Canbaz on 30.09.2024.
-//
-
 import SwiftUI
 
+// Main view of the Landmarks application, displaying the list of landmarks.
 struct ContentView: View {
     var body: some View {
-       LandmarkList()
-        
+        LandmarkList() // Displays the list of landmarks
     }
 }
 
 #Preview {
-    ContentView().environment(ModelData())
+    ContentView().environment(ModelData()) // Preview the ContentView with the model data environment
 }

@@ -1,19 +1,21 @@
-//
-//  CircleImage.swift
-//  Landmarks
-//
-//  Created by Ceren Canbaz on 30.09.2024.
-//
+
 
 import SwiftUI
 
+// A view that displays an image in a circular shape with a white border and shadow.
 struct CircleImage: View {
-    var image:Image
+    var image: Image // The image to be displayed in a circular format
+    
     var body: some View {
-        image.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).overlay{Circle().stroke(.white,lineWidth: 4)}.shadow(radius: 7)
+        image
+            .clipShape(Circle()) // Clips the image to a circular shape
+            .overlay {
+                Circle().stroke(.white, lineWidth: 4) // Adds a white border around the circle
+            }
+            .shadow(radius: 7) // Adds a shadow effect to the image
     }
 }
 
 #Preview {
-    CircleImage(image:Image("turtlerock"))
+    CircleImage(image: Image("turtlerock")) // Preview the CircleImage with a sample image
 }
