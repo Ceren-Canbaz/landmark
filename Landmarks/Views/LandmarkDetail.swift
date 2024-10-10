@@ -3,10 +3,19 @@ import SwiftUI
 
 // A view that displays detailed information about a specified landmark
 struct LandmarkDetail: View {
+    @Environment(ModelData.self) var modelData
+
     var landmark: Landmark // The landmark data to display
+    var landmarkIndex : Int {
+        modelData.landmarks.firstIndex(where: {
+            $0.id == landmark.id
+        })!
+    }
 
 
     var body: some View {
+        @Bindable var modelData = modelData
+
         ScrollView {
             //Display the map view with the landmark's coordinates
             MapView(coordinate: landmark.locationCoordinate)
@@ -20,8 +29,11 @@ struct LandmarkDetail: View {
             //Displays ui objects vertically
             VStack(alignment: .leading) {
                 //Display landmark's name
-                Text(landmark.name)
-                    .font(.title)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    FavoriteButton(isSet:  $modelData.landmarks[landmarkIndex].isFavorite)
+                }
 
                 // Displays UI objects horizontally; that's why the park and state are shown side by side
 
@@ -48,7 +60,10 @@ struct LandmarkDetail: View {
         .navigationBarTitleDisplayMode(.inline) // Display title inline(inline - automatic - large)
     }
 }
-#Preview {
-    LandmarkDetail(landmark: ModelData().landmarks[0])
 
+
+#Preview {
+    let modelData = ModelData()
+    return LandmarkDetail(landmark: modelData.landmarks[0])
+        .environment(modelData)
 }
